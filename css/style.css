@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400&display=swap");
+
+/****************** Mini reset ******************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/****************** General Settings  ******************/
+
+body {
+  height: 100%;
+  background: rgb(78, 78, 78);
+  font-family: "Readex Pro", sans-serif;
+  color: #fff;
+}
+
+/****************** Header Settings ******************/
+#topsite {
+  width: 100%;
+  text-align: center;
+}
+
+#topsite img {
+  margin: 20px;
+  width: 150px;
+  border-radius: 50%;
+  text-align: center;
+  border: 3px solid rgb(193, 162, 109);
+}
+
+#topsite h1 {
+  margin-top: 10px;
+  font-size: 35px;
+}
+
+#topsite #name:hover {
+  transition-duration: 1.5s;
+  color: rgb(193, 162, 109);
+}
+
+#topsite .job_description {
+  margin: 10px 0 40px 0;
+  color: rgb(193, 162, 109);
+}
+
+/* Button  */
+#topsite #CV {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid rgb(193, 162, 109);
+  color: #fff;
+  background-color: inherit;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.5s, background-color 0.5s;
+  text-decoration: none;
+}
+#topsite #CV:hover {
+  color: inherit;
+  background-color: rgb(193, 162, 109);
+}
+
+/****************** Body Settings ******************/
+
+/* Position & General Grid settings */
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 20px;
+  margin: 50px;
+  font-weight: 300;
+}
+
+.container h2 {
+  margin: 10px 0 10px 0;
+}
+
+.container h3 {
+  text-transform: uppercase;
+  color: rgb(193, 162, 109);
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.container img {
+  width: 50px;
+  padding: 2px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.tableTitle {
+  font-weight: bold;
+  color: rgb(193, 162, 109);
+}
+
+#opportunity {
+  text-align: center;
+  font-size: 35px;
+}
+
+#opportunity .gold {
+  color: rgb(193, 162, 109);
+}
+
+/* Container items configuration */
+
+.container #about {
+  grid-column: 1/12;
+  grid-row: 1;
+  border-radius: 20px;
+  border: 2px solid rgb(193, 162, 109);
+  padding: 20px;
+  box-shadow: 0 2px 12px 5px rgba(0, 0, 0, 0.25);
+}
+
+.container #about p {
+  text-align: justify;
+}
+
+.container #experience {
+  grid-column: 5/12;
+  grid-row: 2;
+  border-radius: 20px;
+  border: 2px solid rgb(193, 162, 109);
+  padding: 20px;
+  box-shadow: 0 2px 12px 5px rgba(0, 0, 0, 0.25);
+}
+
+.container #experience .table_experience {
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+
+.container #skills {
+  grid-column: 1 / 5;
+  grid-row: 2;
+  border-radius: 20px;
+  border: 2px solid rgb(193, 162, 109);
+  padding: 20px;
+  box-shadow: 0 2px 12px 5px rgba(0, 0, 0, 0.25);
+}
+
+.container #skills h4 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.container #skills .table_skills {
+  width: 80%;
+}
+
+.container #formation {
+  grid-column: 5 / 12;
+  grid-row: 3;
+  border-radius: 20px;
+  border: 2px solid rgb(193, 162, 109);
+  padding: 20px;
+  box-shadow: 0 2px 12px 5px rgba(0, 0, 0, 0.25);
+}
+
+.container #formation .table_formation {
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+
+.container #interests {
+  grid-column: 1/5;
+  grid-row: 3;
+  border-radius: 20px;
+  border: 2px solid rgb(193, 162, 109);
+  padding: 20px;
+  box-shadow: 0 2px 12px 5px rgba(0, 0, 0, 0.25);
+}
+
+.container #interests .table_interests {
+  margin: auto; /*Centre le tableau*/
+  width: 80%;
+}
+
+/****************** Contact Setting ******************/
+.container_2 {
+  display: flex;
+  justify-content: center;
+  margin: 45px 0 0 0;
+  font-weight: 300;
+}
+
+.container_2 .contact {
+  background: rgba(255, 255, 255, 0.753);
+  color: black;
+  border-radius: 20px;
+  border: 2px solid rgb(193, 162, 109);
+  padding: 20px;
+  box-shadow: 0 2px 12px 5px rgba(0, 0, 0, 0.25);
+}
+
+.container_2 .contact h3 {
+  text-transform: uppercase;
+  color: rgb(193, 162, 109);
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.container_2 .contact img {
+  width: 25px;
+  text-align: left;
+  padding: 2px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.container_2 .contact a {
+  text-decoration: none;
+  color: black;
+}
+
+/****************** Social Media Setting ******************/
+#social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0 0 0;
+  background: rgba(255, 255, 255, 0.281);
+  padding: 4px 0 2px 0;
+}
+#social .social_icon img {
+  width: 30px;
+}
+
+/****************** Responsive Setting ******************/
+@media screen and (max-width: 640px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 50px auto 50px auto;
+  }
+  
+}
